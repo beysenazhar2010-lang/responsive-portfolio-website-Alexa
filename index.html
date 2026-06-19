@@ -26,19 +26,19 @@
             text-align: center;
         }
 
-        /* Блок с твоим новым белым аватаром */
+        /* Стильный контейнер для круглого белого аватара */
         .hero-image-container {
             margin-bottom: 25px;
+            display: inline-block;
         }
         
-        .hero-image {
-            max-width: 160px;
-            width: 100%;
-            height: auto;
-            border-radius: 50%; 
-            background-color: #1e293b;
-            border: 3px solid #38bdf8; /* Красивый неоновый ободок вокруг иконки */
+        .avatar-svg {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #38bdf8;
             box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+            background-color: #cbd5e1;
         }
 
         h1 {
@@ -62,7 +62,6 @@
             margin-bottom: 40px;
         }
 
-        /* Технологические карточки */
         .tech-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -76,11 +75,6 @@
             border-radius: 12px;
             padding: 20px;
             font-size: 1.1rem;
-            transition: border 0.3s;
-        }
-
-        .tech-card:hover {
-            border-color: #38bdf8;
         }
 
         .tech-card span {
@@ -98,11 +92,6 @@
             font-weight: 600;
             border-radius: 50px;
             box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
-            transition: transform 0.2s;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -110,4 +99,5 @@
 
     <div class="container">
         <div class="hero-image-container">
-            
+            <svg class="avatar-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34
