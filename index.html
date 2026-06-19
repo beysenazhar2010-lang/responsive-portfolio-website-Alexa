@@ -26,17 +26,19 @@
             text-align: center;
         }
 
-        /* Блок с картинкой из репозитория */
+        /* Блок с твоим новым белым аватаром */
         .hero-image-container {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
         .hero-image {
-            max-width: 200px;
+            max-width: 160px;
             width: 100%;
             height: auto;
-            border-radius: 50%; /* Сделает аватарку круглой */
-            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+            border-radius: 50%; 
+            background-color: #1e293b;
+            border: 3px solid #38bdf8; /* Красивый неоновый ободок вокруг иконки */
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
         }
 
         h1 {
@@ -50,6 +52,7 @@
             font-size: 1.5rem;
             color: #94a3b8;
             margin-bottom: 20px;
+            font-weight: 400;
         }
 
         .description {
@@ -69,10 +72,15 @@
 
         .tech-card {
             background: #1e293b;
-            border: 1px solid #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.2);
             border-radius: 12px;
             padding: 20px;
             font-size: 1.1rem;
+            transition: border 0.3s;
+        }
+
+        .tech-card:hover {
+            border-color: #38bdf8;
         }
 
         .tech-card span {
@@ -90,6 +98,11 @@
             font-weight: 600;
             border-radius: 50px;
             box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -97,40 +110,4 @@
 
     <div class="container">
         <div class="hero-image-container">
-            <img src="assets/img/perfil.png" alt="Разработчик" class="hero-image">
-        </div>
-
-        <h1>Привет, я Ажар 🚀</h1>
-        <h3>Начинающий IT-специалист / Frontend Developer</h3>
-        
-        <p class="description">
-            Я активно изучаю современные технологии веб-разработки, программирование 
-            и проектирование интерфейсов, чтобы создавать крутые технологичные проекты!
-        </p>
-
-        <div class="tech-grid">
-            <div class="tech-card">
-                <span>💻</span>
-                <b>HTML5 / CSS3</b>
-            </div>
-            <div class="tech-card">
-                <span>⚡</span>
-                <b>JavaScript</b>
-            </div>
-            <div class="tech-card">
-                <span>🛠</span>
-                <b>GitHub / Git</b>
-            </div>
-            <div class="tech-card">
-                <span>⚙️</span>
-                <b>Vercel Deploy</b>
-            </div>
-        </div>
-
-        <div>
-            <a href="#" class="btn">Связаться в Telegram</a>
-        </div>
-    </div>
-
-</body>
-</html>
+            
