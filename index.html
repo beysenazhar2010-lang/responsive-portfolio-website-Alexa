@@ -34,18 +34,16 @@
             border: 1px solid rgba(56, 189, 248, 0.1);
         }
 
-        .avatar-container {
-            margin-bottom: 20px;
-            display: inline-block;
+        /* Блок для главной технологической картинки */
+        .tech-banner-container {
+            margin-bottom: 25px;
         }
-        
-        .avatar-svg {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #38bdf8;
-            background-color: #334155;
-            padding: 10px;
+
+        .tech-banner {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            filter: drop-shadow(0 8px 16px rgba(56, 189, 248, 0.2));
         }
 
         h1 {
@@ -84,12 +82,16 @@
             font-size: 1rem;
             font-weight: bold;
             color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
         }
 
-        .tech-card span {
-            display: block;
-            font-size: 2rem;
-            margin-bottom: 5px;
+        /* Маленькие технологические иконки внутри карточек */
+        .card-icon {
+            width: 40px;
+            height: 40px;
         }
 
         .btn {
@@ -101,21 +103,14 @@
             font-weight: 700;
             border-radius: 50px;
             box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
-            transition: background 0.2s;
-        }
-
-        .btn:hover {
-            background: #7dd3fc;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="avatar-container">
-            <svg class="avatar-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#38bdf8"/>
-            </svg>
+        <div class="tech-banner-container">
+            <img src="https://img.imagesverse.com/2026/06/developer-activity.png" alt="IT Иллюстрация" class="tech-banner">
         </div>
 
         <h1>Привет, я Ажар 🚀</h1>
@@ -128,20 +123,20 @@
 
         <div class="tech-grid">
             <div class="tech-card">
-                <span>💻</span>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="card-icon" alt="HTML">
                 HTML5 / CSS3
             </div>
             <div class="tech-card">
-                <span>⚡</span>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="card-icon" alt="JS">
                 JavaScript
             </div>
             <div class="tech-card">
-                <span>🛠</span>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="card-icon" alt="Git" style="filter: invert(1);">
                 GitHub / Git
             </div>
             <div class="tech-card">
-                <span>⚙️</span>
-                Vercel Deploy
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="card-icon" alt="Vercel">
+                Разработка
             </div>
         </div>
 
