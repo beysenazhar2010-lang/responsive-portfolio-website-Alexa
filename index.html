@@ -1,149 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио | Ажар</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портфолио | Ажар</title>
 
-        body {
-            background-color: #0f172a !important; 
-            color: #f8fafc !important;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-        .container {
-            max-width: 650px;
-            width: 100%;
-            text-align: center;
-            background: #1e293b;
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(56, 189, 248, 0.1);
-        }
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 
-        /* Блок для главной технологической картинки */
-        .tech-banner-container {
-            margin-bottom: 25px;
-        }
+    background:linear-gradient(
+        135deg,
+        #38bdf8,
+        #0ea5e9,
+        #2563eb
+    );
+}
 
-        .tech-banner {
-            width: 100%;
-            max-width: 320px;
-            height: auto;
-            filter: drop-shadow(0 8px 16px rgba(56, 189, 248, 0.2));
-        }
+.container{
+    width:100%;
+    max-width:750px;
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #38bdf8 !important;
-            font-weight: 800;
-        }
+.hero{
+    width:180px;
+    margin-bottom:20px;
+}
 
-        h3 {
-            font-size: 1.3rem;
-            color: #94a3b8 !important;
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
+h1{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
 
-        .description {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #cbd5e1 !important;
-            margin-bottom: 30px;
-        }
+.subtitle{
+    color:#0284c7;
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:20px;
+}
 
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-bottom: 35px;
-        }
+.description{
+    color:#475569;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:35px;
+}
 
-        .tech-card {
-            background: #0f172a;
-            border: 1px solid rgba(56, 189, 248, 0.2);
-            border-radius: 12px;
-            padding: 15px;
-            font-size: 1rem;
-            font-weight: bold;
-            color: #f8fafc;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
+.skills{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:35px;
+}
 
-        /* Маленькие технологические иконки внутри карточек */
-        .card-icon {
-            width: 40px;
-            height: 40px;
-        }
+.card{
+    background:#e0f2fe;
+    padding:20px;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:bold;
+    color:#0f172a;
+    transition:0.3s;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 12px 40px;
-            background: #38bdf8;
-            color: #0f172a !important;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
-        }
-    </style>
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#0ea5e9;
+    color:white;
+    padding:14px 40px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:30px;
+    color:#64748b;
+    font-size:14px;
+}
+
+@media(max-width:600px){
+
+.skills{
+    grid-template-columns:1fr;
+}
+
+h1{
+    font-size:32px;
+}
+
+.hero{
+    width:140px;
+}
+
+}
+</style>
+
 </head>
 <body>
 
-    <div class="container">
-        <div class="tech-banner-container">
-            <img src="https://img.imagesverse.com/2026/06/developer-activity.png" alt="IT Иллюстрация" class="tech-banner">
-        </div>
+<div class="container">
 
-        <h1>Привет, я Ажар 🚀</h1>
-        <h3>Начинающий Frontend Developer</h3>
-        
-        <p class="description">
-            Я активно изучаю технологии веб-разработки, основы создания интерфейсов 
-            и логику современных сайтов. Это мой первый рабочий проект!
-        </p>
+<img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png"
+alt="Developer"
+class="hero">
 
-        <div class="tech-grid">
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="card-icon" alt="HTML">
-                HTML5 / CSS3
-            </div>
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="card-icon" alt="JS">
-                JavaScript
-            </div>
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="card-icon" alt="Git" style="filter: invert(1);">
-                GitHub / Git
-            </div>
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="card-icon" alt="Vercel">
-                Разработка
-            </div>
-        </div>
+<h1>Ажар 👩‍💻</h1>
 
-        <div>
-            <a href="#" class="btn">Telegram</a>
-        </div>
-    </div>
+<p class="subtitle">Начинающий Frontend Developer</p>
+
+<p class="description">
+Изучаю веб-разработку и создаю современные сайты.
+Осваиваю HTML, CSS, JavaScript и GitHub.
+Это мое первое IT-портфолио 🚀
+</p>
+
+<div class="skills">
+
+<div class="card">🌐 HTML5</div>
+
+<div class="card">🎨 CSS3</div>
+
+<div class="card">⚡ JavaScript</div>
+
+<div class="card">💻 GitHub</div>
+
+</div>
+
+<a href="#" class="btn">
+Telegram
+</a>
+
+<div class="footer">
+2026 © Portfolio by Azhar
+</div>
+
+</div>
 
 </body>
 </html>
