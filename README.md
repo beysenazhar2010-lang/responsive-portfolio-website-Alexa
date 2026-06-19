@@ -1,13 +1,39 @@
-# Responsive Portfolio Website Alexa
-## [Watch it on youtube](https://youtu.be/27JtRAI3QO8)
-### Responsive Portfolio Website Alexa
+# 🌐 Портфолио Ажар
 
-- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
-- Smooth scrolling in each section.
-- Includes a light and dark mode.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+## 📌 О проекте
+Это мой первый учебный проект — сайт-портфолио, созданный с использованием HTML и CSS.  
+Проект показывает мои первые шаги в веб-разработке.
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+---
 
-![preview img](/preview.png)
+## ✨ Что есть на сайте
+- 👩‍💻 Информация обо мне  
+- 🌐 Мои навыки (HTML, CSS, JavaScript, GitHub)  
+- 🎨 Современный дизайн с голубым градиентным фоном  
+- 📱 Адаптивная верстка (работает на телефоне и компьютере)  
+- 📋 Раздел с отчетом о проекте  
+- 📩 Кнопка для связи (Telegram)
+
+---
+
+## 🛠️ Использованные технологии
+- HTML5  
+- CSS3  
+- Flexbox и Grid  
+- Google Fonts / иконки  
+- Visual Studio Code  
+
+---
+
+## 🚀 Цель проекта
+Научиться создавать структуру веб-страницы, оформлять её с помощью CSS и сделать первый полноценный сайт-портфолио.
+
+---
+
+## 📊 Результат
+Я получила базовые навыки Frontend-разработки и создала свой первый красивый и современный сайт.
+
+---
+
+## 👩‍💻 Автор
+Ажар
